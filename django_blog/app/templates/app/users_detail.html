@@ -3,4 +3,8 @@
 {% block content %}
 <h2 class="user-name">@{{user.username}}</h2>
 <p>{{user.password}}</p>
+<p>aaaa</p>
+{% for photo in photos %}
+<img src="{{photo.image.url}}" class="photo-img">
+{% endfor %}
 {% endblock %}
